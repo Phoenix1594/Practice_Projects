@@ -1,0 +1,20 @@
+button{
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: gray;
+    box-shadow: 0 5px 5px 0px whitesmoke;
+}
+.white{
+    color: black;
+    background-color: white; 
+}
+.black{
+    color: white;
+    background-color: black;  
+}
+div,p{
+    margin: 25px;
+    padding: 25px;
+}
