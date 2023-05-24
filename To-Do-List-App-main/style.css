@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: seashell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.title{
+    font-size: 35px;
+    font-weight: 600;
+    color: cornflowerblue;
+    letter-spacing: 1px;
+    margin: 30px 0;
+    text-shadow: 0 0 10px cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: white;
+}
+.todo-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-list{
+    padding: 10px;
+    border-radius: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.11);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.item p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #111;
+    letter-spacing: 1px;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: gray;
+}
+.item-btn .edit:hover{
+    color: darkgreen;
+    cursor: pointer;
+}
+.item-btn .delete:hover{
+    color: red;
+    cursor: pointer;
+}
+.item.completed p{    /*get in use when task is completed */
+    text-decoration: line-through;
+    color: #111;
+}
