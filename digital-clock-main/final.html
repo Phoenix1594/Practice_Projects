@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+    div{
+        background-color: black;
+        color: aliceblue;
+        padding: 15px;
+        border: 50px inset;
+        font-size: 19em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+<body>
+    <div id="output"></div>
+    <script type="text/javascript">
+    setInterval(mytimer,1000); 
+        function mytimer(){
+            const d=new Date();
+            let x=d.toLocaleTimeString()
+            document.getElementById('output').innerHTML=x;
+        }
+        mytimer();
+    </script>
+</body>
+</html>
